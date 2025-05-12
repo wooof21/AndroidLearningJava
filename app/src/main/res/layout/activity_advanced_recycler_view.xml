@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".recyclerview.advanced.AdvancedRecyclerViewActivity">
+
+        <Button
+            android:id="@+id/advanced_rv_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="RecyclerView with CardView"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/advanced_rv_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:layout_marginTop="20dp"
+            android:text="RecyclerView with Single Item Selection"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advanced_rv_cardview" />
+
+        <Button
+            android:id="@+id/advanced_rv_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="RecyclerView with Multiple View Types"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advanced_rv_single" />
+
+        <Button
+            android:id="@+id/advanced_rv_multi_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="RecyclerView with Multiple Item Selection"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advanced_rv_multi" />
+
+        <Button
+            android:id="@+id/advanced_rv_swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="RecyclerView with Swipe Item"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/advanced_rv_multi_sel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

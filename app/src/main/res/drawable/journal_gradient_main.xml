@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--   angle: specify the angle how the gradient will be applied
+         270 - vertically from top to bottom
+         0 - horizontal from left to right
+
+         type: linear - linear gradient meaning its transition from one color
+         to another is a straight line
+
+         -->
+    <gradient
+        android:startColor="#00C9FF"
+        android:endColor="#92fe9d"
+        android:angle="270"
+        android:type="linear"/>
+
+</shape>

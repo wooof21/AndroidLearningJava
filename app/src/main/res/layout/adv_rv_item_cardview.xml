@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="planetCard"
+            type="com.androidlearning.recyclerview.advanced.cardview.PlanetCard" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="12dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv_card_item_name"
+                android:padding="1dp"
+                android:text="@{planetCard.planetName}"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv_card_item_distance"
+                android:text="@{String.format(`Distance from sun : %d Million KM`, planetCard.distanceFromSun)}"
+                android:padding="1dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv_card_item_gravity"
+                android:text="@{String.format(`Surface Gravity : %d N/Kg`, planetCard.gravity)}"
+                android:padding="1dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/adv_card_item_diameter"
+                android:text="@{String.format(`Diamter : %d KM`,planetCard.diameter)}"
+                android:padding="1dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

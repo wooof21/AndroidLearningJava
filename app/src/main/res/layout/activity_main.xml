@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--
+Multiple Resource Folders In Android
+https://www.howtodoandroid.com/multiple-resource-folders-android/
+-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/playwrite"
+        android:text="Android Learning"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/widgets_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Widgets Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/widgets_added_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Widgets Activity Added"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/widgets_btn"
+        app:layout_constraintTop_toTopOf="@+id/widgets_btn" />
+
+    <Button
+        android:id="@+id/french_teacher_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="French Teacher"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/widgets_added_btn"
+        app:layout_constraintTop_toTopOf="@+id/widgets_added_btn" />
+
+    <Button
+        android:id="@+id/list_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="List View"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/french_teacher_btn"
+        app:layout_constraintTop_toTopOf="@+id/french_teacher_btn" />
+
+    <Button
+        android:id="@+id/planets_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Planets App"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/widgets_btn"
+        app:layout_constraintTop_toBottomOf="@+id/widgets_btn" />
+
+    <Button
+        android:id="@+id/vol_calc_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Volume Calculator App"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/planets_btn"
+        app:layout_constraintTop_toBottomOf="@+id/widgets_btn" />
+
+    <Button
+        android:id="@+id/market_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Recycler View"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/vol_calc_btn"
+        app:layout_constraintTop_toBottomOf="@+id/widgets_added_btn" />
+
+    <Button
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Card View"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/market_recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/french_teacher_btn" />
+
+    <Button
+        android:id="@+id/music_play_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Music Play Service"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/planets_btn"
+        app:layout_constraintTop_toBottomOf="@+id/planets_btn" />
+
+    <Button
+        android:id="@+id/broadcast_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Broadcast Receiver"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/music_play_service"
+        app:layout_constraintTop_toBottomOf="@+id/planets_btn" />
+
+    <Button
+        android:id="@+id/fragments_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Fragments Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/broadcast_receiver"
+        app:layout_constraintTop_toBottomOf="@+id/vol_calc_btn" />
+
+    <Button
+        android:id="@+id/view_pager_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="View Pager Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/fragments_activity"
+        app:layout_constraintTop_toBottomOf="@+id/vol_calc_btn" />
+
+    <Button
+        android:id="@+id/data_binding_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Data Binding Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/music_play_service"
+        app:layout_constraintTop_toBottomOf="@+id/music_play_service" />
+
+    <Button
+        android:id="@+id/quadratic_equa_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Quadratic Equation Calc Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/data_binding_activity"
+        app:layout_constraintTop_toBottomOf="@+id/music_play_service" />
+
+    <Button
+        android:id="@+id/counter_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Counter Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/quadratic_equa_activity"
+        app:layout_constraintTop_toTopOf="@+id/quadratic_equa_activity" />
+
+    <Button
+        android:id="@+id/contact_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Contact Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/counter_activity"
+        app:layout_constraintTop_toTopOf="@+id/counter_activity" />
+
+    <Button
+        android:id="@+id/movie_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Movie Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/data_binding_activity"
+        app:layout_constraintTop_toBottomOf="@+id/data_binding_activity" />
+
+    <Button
+        android:id="@+id/paging_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="MovieAndPaging Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/movie_activity"
+        app:layout_constraintTop_toBottomOf="@+id/data_binding_activity" />
+
+    <Button
+        android:id="@+id/worker_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Worker Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/paging_activity"
+        app:layout_constraintTop_toBottomOf="@+id/data_binding_activity" />
+
+    <Button
+        android:id="@+id/navigation_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Navigation Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/worker_activity"
+        app:layout_constraintTop_toBottomOf="@+id/data_binding_activity" />
+
+    <Button
+        android:id="@+id/firebase_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Firebase Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/movie_activity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_activity" />
+
+    <Button
+        android:id="@+id/firebase_phone_book_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Firebase PhoneBook Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/firebase_activity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_activity" />
+
+    <Button
+        android:id="@+id/firestore_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Firestore Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/firebase_phone_book_activity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_activity" />
+
+    <Button
+        android:id="@+id/journal_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Journal Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/firestore_activity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_activity" />
+
+    <Button
+        android:id="@+id/chat_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Chat Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/firebase_activity"
+        app:layout_constraintTop_toBottomOf="@+id/firebase_activity" />
+
+    <Button
+        android:id="@+id/fcm_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Cloud Messaging Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/chat_activity"
+        app:layout_constraintTop_toBottomOf="@+id/firebase_activity" />
+
+    <Button
+        android:id="@+id/advanced_recycler_view_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Advanced RecyclerView Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toEndOf="@+id/fcm_activity"
+        app:layout_constraintTop_toBottomOf="@+id/firebase_activity" />
+
+    <Button
+        android:id="@+id/admob_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="5dp"
+        android:text="Admob Activity"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="@+id/chat_activity"
+        app:layout_constraintTop_toBottomOf="@+id/chat_activity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

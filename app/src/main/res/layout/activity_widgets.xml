@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".widgets.WidgetsActivity">
+
+    <CheckBox
+        android:id="@+id/widgets_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="option1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Checkbox"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/widgets_checkbox"
+        app:layout_constraintStart_toEndOf="@+id/widgets_checkbox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/widgets_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/widgets_checkbox"
+        app:layout_constraintVertical_bias="0.041">
+
+        <RadioButton
+            android:id="@+id/widgets_radio_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option1" />
+
+        <RadioButton
+            android:id="@+id/widgets_radio_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option2" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="Radio Group"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/widgets_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/widget_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/widgets_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/widgets_radio_group" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Spinner - Drop Down Menu"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/widget_spinner"
+        app:layout_constraintTop_toTopOf="@+id/widget_spinner" />
+
+    <TimePicker
+        android:id="@+id/widgets_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/widget_spinner" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="contact"
+            type="com.androidlearning.mvvm.model.entity.Contact" />
+
+        <variable
+            name="addContactClickHandler"
+            type="com.androidlearning.mvvm.AddNewContactClickHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".mvvm.view.AddContactActivity"
+        android:background="@drawable/mvvm_back1">
+
+        <EditText
+            android:text="@={contact.name}"
+            android:id="@+id/mvvm_add_contact_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:textSize="20sp"
+            android:layout_marginTop="200dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:text="@={contact.email}"
+            android:id="@+id/mvvm_add_contact_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mvvm_add_contact_name" />
+
+        <Button
+            android:onClick="@{addContactClickHandler::onSubmitBtnClicked}"
+            android:id="@+id/mvvm_add_contact_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contact to RoomDB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mvvm_add_contact_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</layout>

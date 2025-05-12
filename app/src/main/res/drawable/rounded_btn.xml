@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom drawable shape, can be used in layouts or other
+drawable resources-->
+<!-- when using this custom drawable on btn background, add
+app:backgroundTint="@null"
+to avoid the color override by material theme
+
+https://material.io/components?platform=android
+-->
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/blue" />
+    <!-- define corners-->
+    <corners android:radius="28dp" />
+
+    <!-- size define the width and height od shape    -->
+
+
+
+</shape>

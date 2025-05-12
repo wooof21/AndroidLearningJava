@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CustomDrawable</string>
+
+    <string name="text_btn">Custom Drawable Btn</string>
+
+    <string name="text_title">Custom Drawable Resources</string>
+    <string name="title_activity_widgets_added">WidgetsActivityAdded</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_key">76df037c3dc6f00226909bdc3fb75127</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+    <string name="default_notification_channel_name">weather</string>
+</resources>

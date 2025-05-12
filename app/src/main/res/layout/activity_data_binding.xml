@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- wrap the standard layout at root level in <layout></layout> tag,
+convert it into data binding layout
+ 2. -> and copy the android XML namespace (xmlns)
+ 3. -> declare a data element(<data>) under the <layout> before other children layout
+-->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!--declare one or more variable elements to associate with data source-->
+        <!--<variable> is used within the data element to declare variables that will
+        hold data you want to bind to your layout,
+        these variables are typically instance of classes or view models that provide
+        data for your UI-->
+        <variable
+            name="person"
+            type="com.androidlearning.databinding.Person" />
+
+        <variable
+            name="clickHandler"
+            type="com.androidlearning.databinding.ClickHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".databinding.DataBindingActivity">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@{person.name}"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--to handle click event in data binding, using android:onClick="@{}" attribute,
+        passing the method name when click
+          -> declare a new variable
+        -->
+        <Button
+            android:id="@+id/button"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="@{clickHandler::onBtnClicked}"
+            android:text="Handle Data Binding Click Event"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="------------ 2 Way Data Binding ------------"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/two_way_binding_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{person.email}"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <!--use @={} to enable 2 way binding-->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@={person.email}"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/two_way_binding_email" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

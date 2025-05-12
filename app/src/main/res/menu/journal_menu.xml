@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    showAsAction: specific to the Appcompat library, used to
+        specify how the menu items should be displayed in the ActionBar
+        or AppBar
+        ifRoom: indicate that the menu item should be shown in the ActionBar
+        if there is enough room, if there isnt, maybe hidden in the overflow menu
+
+        never: the menu item should never be displayed in the ActionBar
+-->
+    <item
+        android:id="@+id/journal_action_add"
+        android:title="Add Journal"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:title="Sign Out"
+        android:id="@+id/journal_action_signout"
+        app:showAsAction="never"/>
+</menu>
